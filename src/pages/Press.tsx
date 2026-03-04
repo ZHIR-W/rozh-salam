@@ -63,9 +63,11 @@ const Press = () => (
           <div className="text-center border border-border p-12">
             <h2 className="font-serif text-2xl text-foreground mb-4">Download Media Kit</h2>
             <p className="text-muted-foreground mb-6">High-res photos, logos, bio text, and technical rider.</p>
-            <Button size="lg" className="tracking-[0.15em] uppercase text-xs px-8">
-              <Download size={16} className="mr-2" /> Download PDF
-            </Button>
+            <a href="/rozh-salam-media-kit.zip" download>
+              <Button size="lg" className="tracking-[0.15em] uppercase text-xs px-8">
+                <Download size={16} className="mr-2" /> Download Media Kit
+              </Button>
+            </a>
           </div>
         </ScrollReveal>
       </div>
