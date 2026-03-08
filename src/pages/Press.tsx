@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Layout from "@/components/Layout";
 import { siteConfig, aboutText, pressQuotes } from "@/data/content";
 
-const headshots = ["/photos/IMG_3184.JPG", "/photos/DSC_3136.JPG", "/photos/DSC_3132.JPG"];
+const headshots = ["/photos/IMG_4173.JPG", "/photos/IMG_4378.JPG", "/photos/IMG_4833.JPG"];
 
 const Press = () => (
   <Layout>

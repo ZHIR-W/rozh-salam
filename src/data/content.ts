@@ -87,16 +87,14 @@ export const shows = [
 ];
 
 export const galleryPhotos = [
-  "/photos/IMG_3184.JPG",
-  "/photos/DSC_3136.JPG",
-  "/photos/DSC_3132.JPG",
-  "/photos/DSC_3104.JPG",
-  "/photos/DSC07905.JPG",
-  "/photos/DSC07904.JPG",
-  "/photos/8.jpg",
-  "/photos/IMG_1598.JPG",
-  "/photos/IMG_1594.JPG",
-  "/photos/IMG_1595.JPG",
+  "/photos/IMG_4173.JPG",
+  "/photos/IMG_4287.JPG",
+  "/photos/IMG_4311.JPG",
+  "/photos/IMG_4317.JPG",
+  "/photos/IMG_4378.JPG",
+  "/photos/IMG_4578.JPG",
+  "/photos/IMG_4727.JPG",
+  "/photos/IMG_4833.JPG",
 ];
 
 export const pressQuotes = [
