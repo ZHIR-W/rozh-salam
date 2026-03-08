@@ -10,8 +10,8 @@ export const siteConfig = {
 };
 
 export const aboutText = {
-  short: "Rozh Salam is an internationally acclaimed close-up magician and mentalist, known for his cinematic performances that blur the line between reality and illusion. With over a decade of experience performing at private events, luxury galas, and television appearances across the Middle East and Europe, Rozh has built a reputation for the impossible.",
-  long: "From the streets of Kurdistan to stages around the world, Rozh Salam has captivated audiences with his unique blend of sleight-of-hand mastery and psychological illusion. His performances are intimate, powerful, and unforgettable — designed to leave a lasting impression on every audience member.",
+  short: "Rozh Salam is a close-up magician and mentalist from Iraq, known for his cinematic performances that blur the line between reality and illusion. With 4 years of experience performing at private events, luxury galas, and television appearances — and invited to perform at events outside Iraq — Rozh has built a reputation for the impossible.",
+  long: "From the streets of Kurdistan to international stages, Rozh Salam has captivated audiences with his unique blend of sleight-of-hand mastery and psychological illusion. His performances are intimate, powerful, and unforgettable — designed to leave a lasting impression on every audience member.",
 };
 
 export const videos = [
