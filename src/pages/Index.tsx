@@ -46,7 +46,7 @@ const Index = () => {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
-            <img src="/photos/DSC_3136.JPG" alt="Rozh Salam portrait" className="w-full aspect-[3/4] object-cover" loading="lazy" />
+            <img src="/photos/IMG_4156.JPG" alt="Rozh Salam portrait" className="w-full aspect-[3/4] object-cover" loading="lazy" />
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
             <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4">About</p>
