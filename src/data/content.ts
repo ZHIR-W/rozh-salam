@@ -15,12 +15,12 @@ export const aboutText = {
 };
 
 export const videos = [
-  { id: "1", title: "The Impossible Card", category: "Street", thumbnail: "/photos/DSC_3136.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: true },
-  { id: "2", title: "Mind Reading Live", category: "Mentalism", thumbnail: "/photos/DSC_3132.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "3", title: "Corporate Gala Performance", category: "Stage", thumbnail: "/photos/DSC_3104.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "4", title: "Street Magic — Erbil", category: "Street", thumbnail: "/photos/DSC07905.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "5", title: "Television Special", category: "TV", thumbnail: "/photos/DSC07904.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "6", title: "60-Second Miracle", category: "Shorts", thumbnail: "/photos/8.jpg", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
+  { id: "1", title: "The Impossible Card", category: "Street", thumbnail: "/photos/IMG_4173.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: true },
+  { id: "2", title: "Mind Reading Live", category: "Mentalism", thumbnail: "/photos/IMG_4287.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
+  { id: "3", title: "Corporate Gala Performance", category: "Stage", thumbnail: "/photos/IMG_4311.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
+  { id: "4", title: "Street Magic — Erbil", category: "Street", thumbnail: "/photos/IMG_4378.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
+  { id: "5", title: "Television Special", category: "TV", thumbnail: "/photos/IMG_4578.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
+  { id: "6", title: "60-Second Miracle", category: "Shorts", thumbnail: "/photos/IMG_4727.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
 ];
 
 export const shows = [
