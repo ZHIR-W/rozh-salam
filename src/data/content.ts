@@ -4,9 +4,11 @@ export const siteConfig = {
   email: "booking@rozhsalam.com",
   whatsapp: "+964 772 517 3244",
   whatsappLink: "https://wa.me/9647725173244",
-  instagram: "https://instagram.com/rozhsalam",
-  youtube: "https://youtube.com/@rozhsalam",
-  tiktok: "https://tiktok.com/@rozhsalam",
+  instagram: "https://www.instagram.com/rozh_viola?igsh=OGxwYWF0c3I2Zmlm",
+  youtube: "https://youtube.com/@rozhgaming4439?si=aLBK0_-6MaEo_aFU",
+  tiktok: "https://www.tiktok.com/@rozh_gaming97?_r=1&_t=ZS-94WWbfjtnwD",
+  snapchat: "https://www.snapchat.com/add/rozh.magic?share_id=ckbFXka3T4qcImJTe40KSQ&locale=en_US",
+  facebook: "https://www.facebook.com/share/1829wGxX1P/?mibextid=wwXIfr",
 };
 
 export const aboutText = {
