@@ -4,9 +4,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Layout from "@/components/Layout";
 import { galleryPhotos } from "@/data/content";
 import { AnimatePresence, motion } from "framer-motion";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Gallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const { t } = useLanguage();
 
   const prev = () => setLightbox((i) => (i !== null ? (i - 1 + galleryPhotos.length) % galleryPhotos.length : null));
   const next = () => setLightbox((i) => (i !== null ? (i + 1) % galleryPhotos.length : null));
@@ -16,11 +18,10 @@ const Gallery = () => {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">Portfolio</p>
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-12 text-center">Gallery</h1>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">{t("gallery.label")}</p>
+            <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-12 text-center">{t("gallery.title")}</h1>
           </ScrollReveal>
 
-          {/* Masonry-ish grid */}
           <div className="columns-2 md:columns-3 gap-4 space-y-4">
             {galleryPhotos.map((photo, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
@@ -51,13 +52,13 @@ const Gallery = () => {
             className="fixed inset-0 z-[60] bg-background/95 flex items-center justify-center"
             onClick={() => setLightbox(null)}
           >
-            <button className="absolute top-6 right-6 text-foreground hover:text-primary transition-colors" onClick={() => setLightbox(null)}>
+            <button className="absolute top-6 end-6 text-foreground hover:text-primary transition-colors" onClick={() => setLightbox(null)}>
               <X size={32} />
             </button>
-            <button className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground hover:text-primary transition-colors" onClick={(e) => { e.stopPropagation(); prev(); }}>
+            <button className="absolute start-4 top-1/2 -translate-y-1/2 text-foreground hover:text-primary transition-colors" onClick={(e) => { e.stopPropagation(); prev(); }}>
               <ChevronLeft size={40} />
             </button>
-            <button className="absolute right-4 top-1/2 -translate-y-1/2 text-foreground hover:text-primary transition-colors" onClick={(e) => { e.stopPropagation(); next(); }}>
+            <button className="absolute end-4 top-1/2 -translate-y-1/2 text-foreground hover:text-primary transition-colors" onClick={(e) => { e.stopPropagation(); next(); }}>
               <ChevronRight size={40} />
             </button>
             <motion.img

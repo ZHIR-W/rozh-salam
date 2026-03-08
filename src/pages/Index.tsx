@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig, aboutText, videos, shows, pressQuotes } from "@/data/content";
 import Layout from "@/components/Layout";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
+  const { t } = useLanguage();
   const featuredVideos = videos.slice(0, 3);
   const featuredShows = shows.slice(0, 3);
 
@@ -32,10 +34,10 @@ const Index = () => {
           <ScrollReveal delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="tracking-[0.15em] uppercase text-xs px-8">
-                <Link to="/videos"><Play size={16} className="mr-2" />Watch Reel</Link>
+                <Link to="/videos"><Play size={16} className="me-2" />{t("hero.watchReel")}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="tracking-[0.15em] uppercase text-xs px-8 border-foreground/30 text-foreground hover:bg-foreground/10">
-                <Link to="/booking"><Calendar size={16} className="mr-2" />Book Now</Link>
+                <Link to="/booking"><Calendar size={16} className="me-2" />{t("hero.bookNow")}</Link>
               </Button>
             </div>
           </ScrollReveal>
@@ -49,8 +51,8 @@ const Index = () => {
             <img src="/photos/IMG_4156.JPG" alt="Rozh Salam portrait" className="w-full aspect-[3/4] object-cover" loading="lazy" />
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4">About</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">The Performer</h2>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4">{t("about.label")}</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">{t("about.title")}</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">{aboutText.short}</p>
             <p className="text-muted-foreground leading-relaxed">{aboutText.long}</p>
           </ScrollReveal>
@@ -61,8 +63,8 @@ const Index = () => {
       <section className="py-24 px-6 bg-secondary/30">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">Featured</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">Videos</h2>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">{t("featuredVideos.label")}</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">{t("featuredVideos.title")}</h2>
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6">
             {featuredVideos.map((v, i) => (
@@ -83,7 +85,7 @@ const Index = () => {
           <ScrollReveal delay={0.3}>
             <div className="text-center mt-10">
               <Button asChild variant="outline" className="tracking-[0.15em] uppercase text-xs border-foreground/30 text-foreground hover:bg-foreground/10">
-                <Link to="/videos">View All Videos</Link>
+                <Link to="/videos">{t("videos.viewAll")}</Link>
               </Button>
             </div>
           </ScrollReveal>
@@ -94,8 +96,8 @@ const Index = () => {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">Signature</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">Shows & Acts</h2>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">{t("featuredShows.label")}</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">{t("featuredShows.title")}</h2>
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6">
             {featuredShows.map((s, i) => (
@@ -104,7 +106,7 @@ const Index = () => {
                   <div className="relative aspect-[4/5] overflow-hidden mb-3">
                     <img src={s.image} alt={s.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                    <div className="absolute bottom-4 left-4 right-4">
+                    <div className="absolute bottom-4 start-4 end-4">
                       <p className="text-foreground font-serif text-lg">{s.title}</p>
                       <p className="text-muted-foreground text-sm mt-1">{s.shortDesc}</p>
                     </div>
@@ -116,7 +118,7 @@ const Index = () => {
           <ScrollReveal delay={0.3}>
             <div className="text-center mt-10">
               <Button asChild variant="outline" className="tracking-[0.15em] uppercase text-xs border-foreground/30 text-foreground hover:bg-foreground/10">
-                <Link to="/shows">View All Shows</Link>
+                <Link to="/shows">{t("shows.viewAll")}</Link>
               </Button>
             </div>
           </ScrollReveal>
@@ -127,13 +129,13 @@ const Index = () => {
       <section className="py-24 px-6 bg-secondary/30">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
-            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">Press</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">What They Say</h2>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">{t("pressSection.label")}</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">{t("pressSection.title")}</h2>
           </ScrollReveal>
           <div className="grid md:grid-cols-2 gap-8">
             {pressQuotes.map((q, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <blockquote className="border-l-2 border-primary pl-6">
+                <blockquote className="border-s-2 border-primary ps-6">
                   <p className="text-foreground font-serif text-lg italic mb-2">"{q.quote}"</p>
                   <cite className="text-muted-foreground text-sm not-italic">— {q.source}</cite>
                 </blockquote>
@@ -147,12 +149,10 @@ const Index = () => {
       <section className="py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
-            <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-6">Make Your Event Unforgettable</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Available for private events, corporate functions, weddings, and television appearances worldwide.
-            </p>
+            <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-6">{t("cta.title")}</h2>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">{t("cta.subtitle")}</p>
             <Button asChild size="lg" className="tracking-[0.15em] uppercase text-xs px-10">
-              <Link to="/booking"><Calendar size={16} className="mr-2" />Book Rozh Salam</Link>
+              <Link to="/booking"><Calendar size={16} className="me-2" />{t("cta.book")}</Link>
             </Button>
           </ScrollReveal>
         </div>
