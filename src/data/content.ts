@@ -23,6 +23,7 @@ export const videos = [
   { id: "4", title: "Street Magic — Erbil", category: "Street", thumbnail: "/photos/IMG_4378.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "5", title: "Television Special", category: "TV", thumbnail: "/photos/IMG_4578.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "6", title: "60-Second Miracle", category: "Shorts", thumbnail: "/photos/IMG_4727.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
+  { id: "7", title: "Interview", category: "Interview", thumbnail: "/photos/IMG_4156.JPG", embedUrl: "https://www.youtube.com/embed/_vBORzx3Jp0", featured: false },
 ];
 
 export const shows = [
