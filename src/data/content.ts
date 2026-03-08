@@ -24,6 +24,8 @@ export const videos = [
   { id: "5", title: "Television Special", category: "TV", thumbnail: "/photos/IMG_4578.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "6", title: "60-Second Miracle", category: "Shorts", thumbnail: "/photos/IMG_4727.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "7", title: "Interview", category: "Interview", thumbnail: "/photos/IMG_4156.JPG", embedUrl: "https://www.youtube.com/embed/_vBORzx3Jp0", featured: false },
+  { id: "8", title: "Interview — Rozh Salam", category: "Interview", thumbnail: "https://img.youtube.com/vi/_ktBYXQ3DgU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/_ktBYXQ3DgU", featured: false },
+  { id: "9", title: "Interview — Behind the Magic", category: "Interview", thumbnail: "https://img.youtube.com/vi/njwJvsrDEW8/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/njwJvsrDEW8", featured: false },
 ];
 
 export const shows = [
