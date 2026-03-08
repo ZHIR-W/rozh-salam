@@ -18,6 +18,7 @@ export const aboutText = {
 
 export const videos = [
   { id: "1", title: "The Impossible Card", category: "Street", thumbnail: "/photos/IMG_4173.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: true },
+  { id: "11", title: "Street Magic", category: "Street", thumbnail: "https://img.youtube.com/vi/DyrBO0ptMtc/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/DyrBO0ptMtc", featured: false },
   { id: "2", title: "Mind Reading Live", category: "Mentalism", thumbnail: "/photos/IMG_4287.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "3", title: "Corporate Gala Performance", category: "Stage", thumbnail: "/photos/IMG_4311.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "10", title: "Stage Performance", category: "Stage", thumbnail: "https://img.youtube.com/vi/x0K2pIZJqxs/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/x0K2pIZJqxs", featured: false },
