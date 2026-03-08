@@ -28,6 +28,10 @@ export const videos = [
   { id: "7", title: "Interview", category: "Interview", thumbnail: "/photos/IMG_4156.JPG", embedUrl: "https://www.youtube.com/embed/_vBORzx3Jp0", featured: false },
   { id: "8", title: "Interview — Rozh Salam", category: "Interview", thumbnail: "https://img.youtube.com/vi/_ktBYXQ3DgU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/_ktBYXQ3DgU", featured: false },
   { id: "9", title: "Interview — Behind the Magic", category: "Interview", thumbnail: "https://img.youtube.com/vi/njwJvsrDEW8/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/njwJvsrDEW8", featured: false },
+  { id: "12", title: "Interview — Quick Take 1", category: "Interview", thumbnail: "https://img.youtube.com/vi/GtiBimFETkQ/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/GtiBimFETkQ", featured: false },
+  { id: "13", title: "Interview — Quick Take 2", category: "Interview", thumbnail: "https://img.youtube.com/vi/JQw9od8x_l4/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/JQw9od8x_l4", featured: false },
+  { id: "14", title: "Interview — Quick Take 3", category: "Interview", thumbnail: "https://img.youtube.com/vi/yCdgOquw0BU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/yCdgOquw0BU", featured: false },
+  { id: "15", title: "Interview — Quick Take 4", category: "Interview", thumbnail: "https://img.youtube.com/vi/QCHgkfzgVpU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/QCHgkfzgVpU", featured: false },
 ];
 
 export const shows = [
