@@ -107,4 +107,4 @@ export const pressQuotes = [
   { quote: "The future of magic in the Middle East.", source: "The National" },
 ];
 
-export const videoCategories = ["All", "Street", "Stage", "Mentalism", "TV", "Shorts"] as const;
+export const videoCategories = ["All", "Street", "Stage", "Mentalism", "TV", "Shorts", "Interview"] as const;
