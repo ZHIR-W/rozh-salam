@@ -122,7 +122,13 @@ const Videos = () => {
               <ScrollReveal key={v.id} delay={i * 0.1}>
                 <div
                   className="group cursor-pointer"
-                  onClick={() => setActiveVideo(v.embedUrl)}
+                  onClick={() => {
+                    if ((v as { external?: boolean }).external) {
+                      window.open(v.embedUrl, "_blank", "noopener,noreferrer");
+                    } else {
+                      setActiveVideo(v.embedUrl);
+                    }
+                  }}
                 >
                   <div className="relative aspect-video overflow-hidden mb-3">
                     <img src={v.thumbnail} alt={v.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
