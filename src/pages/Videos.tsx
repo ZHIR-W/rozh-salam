@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Play, X } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import Layout from "@/components/Layout";
@@ -22,6 +22,50 @@ const Videos = () => {
 
   const filtered = filter === "All" ? videos : videos.filter((v) => v.category === filter);
   const featured = videos.find((v) => v.featured);
+
+  useEffect(() => {
+    const isTV = filter === "TV";
+    const title = isTV
+      ? "TV Appearances — Rozh Salam | Magician & Mentalist on Television"
+      : "Videos — Rozh Salam | Stage, Street, TV & Mentalism";
+    const description = isTV
+      ? "Watch Rozh Salam's television appearances and TV specials — cinematic close-up magic and mentalism broadcast across Kurdistan and the Middle East."
+      : "Watch Rozh Salam perform cinematic close-up magic and mentalism — stage shows, street magic, TV appearances, interviews, and shorts.";
+    const url = `${window.location.origin}/videos`;
+    const ogImage =
+      "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/079aa1e7-658f-4bd3-9bf4-6dc91c5988d6/id-preview-8c985af9--2d01a5f8-9ce0-4f85-b04b-437eaa30cf51.lovable.app-1771338032942.png";
+
+    document.title = title;
+
+    const setMeta = (selector: string, attr: "name" | "property", key: string, content: string) => {
+      let el = document.head.querySelector<HTMLMetaElement>(selector);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+
+    setMeta('meta[name="description"]', "name", "description", description);
+    setMeta('meta[property="og:title"]', "property", "og:title", title);
+    setMeta('meta[property="og:description"]', "property", "og:description", description);
+    setMeta('meta[property="og:type"]', "property", "og:type", "video.other");
+    setMeta('meta[property="og:url"]', "property", "og:url", url);
+    setMeta('meta[property="og:image"]', "property", "og:image", ogImage);
+    setMeta('meta[name="twitter:card"]', "name", "twitter:card", "summary_large_image");
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
+    setMeta('meta[name="twitter:image"]', "name", "twitter:image", ogImage);
+
+    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", url);
+  }, [filter]);
 
   return (
     <Layout>
