@@ -17,14 +17,8 @@ export const aboutText = {
 };
 
 export const videos = [
-  { id: "1", title: "The Impossible Card", category: "Street", thumbnail: "/photos/IMG_4173.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: true },
   { id: "11", title: "Street Magic", category: "Street", thumbnail: "https://img.youtube.com/vi/DyrBO0ptMtc/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/DyrBO0ptMtc", featured: false },
-  { id: "2", title: "Mind Reading Live", category: "Mentalism", thumbnail: "/photos/IMG_4287.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "3", title: "Corporate Gala Performance", category: "Stage", thumbnail: "/photos/IMG_4311.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "10", title: "Stage Performance", category: "Stage", thumbnail: "https://img.youtube.com/vi/x0K2pIZJqxs/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/x0K2pIZJqxs", featured: false },
-  { id: "4", title: "Street Magic — Erbil", category: "Street", thumbnail: "/photos/IMG_4378.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "5", title: "Television Special", category: "TV", thumbnail: "/photos/IMG_4578.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
-  { id: "6", title: "60-Second Miracle", category: "Shorts", thumbnail: "/photos/IMG_4727.JPG", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", featured: false },
   { id: "7", title: "Interview", category: "Interview", thumbnail: "/photos/IMG_4156.JPG", embedUrl: "https://www.youtube.com/embed/_vBORzx3Jp0", featured: false },
   { id: "8", title: "Interview — Rozh Salam", category: "Interview", thumbnail: "https://img.youtube.com/vi/_ktBYXQ3DgU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/_ktBYXQ3DgU", featured: false },
   { id: "9", title: "Interview — Behind the Magic", category: "Interview", thumbnail: "https://img.youtube.com/vi/njwJvsrDEW8/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/njwJvsrDEW8", featured: false },
