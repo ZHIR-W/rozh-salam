@@ -104,8 +104,8 @@ export const galleryPhotos = [
 ];
 
 export const pressQuotes = [
-  { quote: "One of the most captivating performers I've ever witnessed.", source: "Kurdistan24 TV" },
-  { quote: "Rozh Salam redefines what's possible with a deck of cards.", source: "Rudaw Media" },
+  { quote: "One of the most captivating performers I've ever witnessed.", source: "AVA TV" },
+  { quote: "Rozh Salam redefines what's possible with a deck of cards.", source: "KHAK TV" },
   { quote: "A masterclass in close-up magic and audience connection.", source: "Event Magazine" },
   { quote: "The future of magic in the Middle East.", source: "The National" },
 ];
