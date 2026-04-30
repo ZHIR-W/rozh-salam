@@ -26,6 +26,7 @@ export const videos = [
   { id: "13", title: "Interview — Quick Take 2", category: "Interview", thumbnail: "https://img.youtube.com/vi/JQw9od8x_l4/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/JQw9od8x_l4", featured: false },
   { id: "14", title: "Interview — Quick Take 3", category: "Interview", thumbnail: "https://img.youtube.com/vi/yCdgOquw0BU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/yCdgOquw0BU", featured: false },
   { id: "15", title: "Interview — Quick Take 4", category: "Interview", thumbnail: "https://img.youtube.com/vi/QCHgkfzgVpU/hqdefault.jpg", embedUrl: "https://www.youtube.com/embed/QCHgkfzgVpU", featured: false },
+  { id: "17", title: "Mentalism — Instagram Reel", category: "Mentalism", thumbnail: "/photos/IMG_4311.JPG", embedUrl: "https://www.instagram.com/reel/DXhrcAiNOsw/", featured: false, external: true },
 ];
 
 export const shows = [
