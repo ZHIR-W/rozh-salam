@@ -5,6 +5,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig, aboutText, videos, shows, pressQuotes, sponsors } from "@/data/content";
 import Layout from "@/components/Layout";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -154,17 +156,33 @@ const Index = () => {
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">{t("sponsors.subtitle")}</p>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
-            <Link to="/sponsors" className="group block">
-              <div className="relative overflow-hidden border border-border/50 bg-secondary/20 hover:border-primary/40 transition-colors py-10">
-                <div className="flex gap-12 animate-marquee group-hover:[animation-play-state:paused] w-max">
-                  {[...sponsors, ...sponsors].map((s, i) => (
-                    <div key={i} className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
-                      <img src={s.logo} alt={s.name} className="max-h-full max-w-full object-contain opacity-60 group-hover:opacity-90 transition-opacity" loading="lazy" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </Link>
+            <Carousel
+              opts={{ loop: true, align: "start" }}
+              plugins={[Autoplay({ delay: 3500, stopOnInteraction: false })]}
+              className="w-full"
+            >
+              <CarouselContent className="-ms-4">
+                {sponsors.map((s) => (
+                  <CarouselItem key={s.name} className="ps-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <Link to="/sponsors" className="group block">
+                      <div className="aspect-[3/2] border border-border/50 bg-secondary/20 hover:border-primary/40 transition-colors flex flex-col items-center justify-center p-6">
+                        <img
+                          src={s.logo}
+                          alt={s.name}
+                          className="max-h-16 max-w-full object-contain opacity-60 group-hover:opacity-100 transition-opacity"
+                          loading="lazy"
+                        />
+                        <p className="mt-3 text-[10px] tracking-[0.15em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
+                          {s.name}
+                        </p>
+                      </div>
+                    </Link>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
             <div className="text-center mt-10">
               <Button asChild variant="outline" className="tracking-[0.15em] uppercase text-xs border-foreground/30 text-foreground hover:bg-foreground/10">
                 <Link to="/sponsors">{t("sponsors.viewAll")}</Link>
