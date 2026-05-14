@@ -163,18 +163,16 @@ const Index = () => {
             >
               <CarouselContent className="-ms-4">
                 {sponsors.map((s) => (
-                  <CarouselItem key={s.name} className="ps-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <CarouselItem key={s.name} className="ps-4 basis-full">
                     <Link to="/sponsors" className="group block">
-                      <div className="aspect-[3/2] border border-border/50 bg-secondary/20 hover:border-primary/40 transition-colors flex flex-col items-center justify-center p-6">
+                      <div className="aspect-[16/6] border border-border/50 bg-secondary/20 hover:border-primary/40 transition-colors flex flex-col items-center justify-center p-10">
                         <img
                           src={s.logo}
                           alt={s.name}
-                          className="max-h-16 max-w-full object-contain opacity-60 group-hover:opacity-100 transition-opacity"
+                          className="max-h-32 max-w-[60%] object-contain opacity-70 group-hover:opacity-100 transition-opacity"
                           loading="lazy"
                         />
-                        <p className="mt-3 text-[10px] tracking-[0.15em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
-                          {s.name}
-                        </p>
+                        <p className="mt-6 font-serif text-xl text-foreground">{s.name}</p>
                       </div>
                     </Link>
                   </CarouselItem>
