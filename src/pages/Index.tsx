@@ -156,7 +156,7 @@ const Index = () => {
           <ScrollReveal delay={0.15}>
             <Link to="/sponsors" className="group block">
               <div className="relative overflow-hidden border border-border/50 bg-secondary/20 hover:border-primary/40 transition-colors py-10">
-                <div className="flex gap-12 animate-[scroll_30s_linear_infinite] group-hover:[animation-play-state:paused]">
+                <div className="flex gap-12 animate-marquee group-hover:[animation-play-state:paused] w-max">
                   {[...sponsors, ...sponsors].map((s, i) => (
                     <div key={i} className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
                       <img src={s.logo} alt={s.name} className="max-h-full max-w-full object-contain opacity-60 group-hover:opacity-90 transition-opacity" loading="lazy" />
