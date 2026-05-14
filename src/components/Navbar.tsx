@@ -12,6 +12,7 @@ const navLinks = [
   { key: "nav.shows", path: "/shows" },
   { key: "nav.gallery", path: "/gallery" },
   { key: "nav.press", path: "/press" },
+  { key: "nav.sponsors", path: "/sponsors" },
   { key: "nav.booking", path: "/booking" },
 ];
 

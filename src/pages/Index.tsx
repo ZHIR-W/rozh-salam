@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Play, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
-import { siteConfig, aboutText, videos, shows, pressQuotes } from "@/data/content";
+import { siteConfig, aboutText, videos, shows, pressQuotes, sponsors } from "@/data/content";
 import Layout from "@/components/Layout";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -142,6 +142,35 @@ const Index = () => {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sponsors */}
+      <section className="py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4 text-center">{t("sponsors.label")}</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4 text-center">{t("sponsors.title")}</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">{t("sponsors.subtitle")}</p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.15}>
+            <Link to="/sponsors" className="group block">
+              <div className="relative overflow-hidden border border-border/50 bg-secondary/20 hover:border-primary/40 transition-colors py-10">
+                <div className="flex gap-12 animate-[scroll_30s_linear_infinite] group-hover:[animation-play-state:paused]">
+                  {[...sponsors, ...sponsors].map((s, i) => (
+                    <div key={i} className="flex-shrink-0 w-40 h-20 flex items-center justify-center">
+                      <img src={s.logo} alt={s.name} className="max-h-full max-w-full object-contain opacity-60 group-hover:opacity-90 transition-opacity" loading="lazy" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Link>
+            <div className="text-center mt-10">
+              <Button asChild variant="outline" className="tracking-[0.15em] uppercase text-xs border-foreground/30 text-foreground hover:bg-foreground/10">
+                <Link to="/sponsors">{t("sponsors.viewAll")}</Link>
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

@@ -10,6 +10,7 @@ import Shows from "./pages/Shows";
 import Gallery from "./pages/Gallery";
 import Booking from "./pages/Booking";
 import Press from "./pages/Press";
+import Sponsors from "./pages/Sponsors";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/press" element={<Press />} />
+            <Route path="/sponsors" element={<Sponsors />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
