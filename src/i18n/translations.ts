@@ -101,6 +101,18 @@ export const translations: Record<Language, Record<string, string>> = {
     "pressSection.label": "Press",
     "pressSection.title": "What They Say",
 
+    // Sponsors
+    "sponsors.label": "Partners",
+    "sponsors.title": "Our Sponsors",
+    "sponsors.subtitle": "Trusted by brands and partners who make the magic possible.",
+    "sponsors.viewAll": "View Sponsorship",
+    "sponsors.pageTitle": "Sponsorship",
+    "sponsors.pageIntro": "We partner with brands that share our passion for wonder and craftsmanship. Explore our current sponsors and learn how to become one.",
+    "sponsors.becomeTitle": "Become a Sponsor",
+    "sponsors.becomeDesc": "Align your brand with unforgettable performances reaching audiences across the region and beyond.",
+    "sponsors.contactBtn": "Contact for Sponsorship",
+    "nav.sponsors": "Sponsors",
+
     // Featured shows on homepage
     "featuredShows.label": "Signature",
     "featuredShows.title": "Shows & Acts",
@@ -195,6 +207,17 @@ export const translations: Record<Language, Record<string, string>> = {
     "pressSection.label": "میدیا",
     "pressSection.title": "چی دەڵێن",
 
+    "sponsors.label": "هاوبەشەکان",
+    "sponsors.title": "سپۆنسەرەکانمان",
+    "sponsors.subtitle": "متمانە لەلایەن براند و هاوبەشەکانەوە کە جادووەکە دەکەن بە ڕاستی.",
+    "sponsors.viewAll": "بینینی سپۆنسەرشیپ",
+    "sponsors.pageTitle": "سپۆنسەرشیپ",
+    "sponsors.pageIntro": "ئێمە هاوبەشی دەکەین لەگەڵ ئەو براندانەی کە حەزی ئێمەیان بۆ سەرسوڕمان و کوالیتی هەیە.",
+    "sponsors.becomeTitle": "ببە بە سپۆنسەر",
+    "sponsors.becomeDesc": "براندەکەت ببەستەوە بە پێشکەشکردنی نەبیرچوونەوە کە بە بینەرانی زۆر دەگات.",
+    "sponsors.contactBtn": "پەیوەندی بۆ سپۆنسەرشیپ",
+    "nav.sponsors": "سپۆنسەر",
+
     "featuredShows.label": "تایبەت",
     "featuredShows.title": "شۆ و ئەکتەکان",
 
@@ -285,6 +308,17 @@ export const translations: Record<Language, Record<string, string>> = {
 
     "pressSection.label": "الإعلام",
     "pressSection.title": "ماذا يقولون",
+
+    "sponsors.label": "الشركاء",
+    "sponsors.title": "رعاتنا",
+    "sponsors.subtitle": "موثوق به من قبل العلامات التجارية والشركاء الذين يجعلون السحر ممكناً.",
+    "sponsors.viewAll": "عرض الرعاية",
+    "sponsors.pageTitle": "الرعاية",
+    "sponsors.pageIntro": "نحن نتشارك مع العلامات التجارية التي تشاركنا شغفنا بالدهشة والإتقان.",
+    "sponsors.becomeTitle": "كن راعياً",
+    "sponsors.becomeDesc": "اربط علامتك التجارية بعروض لا تُنسى تصل إلى جماهير في المنطقة وخارجها.",
+    "sponsors.contactBtn": "تواصل للرعاية",
+    "nav.sponsors": "الرعاة",
 
     "featuredShows.label": "مميز",
     "featuredShows.title": "العروض والأعمال",

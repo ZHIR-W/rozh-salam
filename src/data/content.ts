@@ -111,3 +111,12 @@ export const pressQuotes = [
 ];
 
 export const videoCategories = ["All", "Street", "Stage", "Mentalism", "TV", "Shorts", "Interview"] as const;
+
+export const sponsors = [
+  { name: "Sponsor One", logo: "/placeholder.svg", url: "" },
+  { name: "Sponsor Two", logo: "/placeholder.svg", url: "" },
+  { name: "Sponsor Three", logo: "/placeholder.svg", url: "" },
+  { name: "Sponsor Four", logo: "/placeholder.svg", url: "" },
+  { name: "Sponsor Five", logo: "/placeholder.svg", url: "" },
+  { name: "Sponsor Six", logo: "/placeholder.svg", url: "" },
+];
