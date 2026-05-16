@@ -181,9 +181,12 @@ const Index = () => {
               <CarouselPrevious className="hidden md:flex" />
               <CarouselNext className="hidden md:flex" />
             </Carousel>
-            <div className="text-center mt-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-10">
               <Button asChild variant="outline" className="tracking-[0.15em] uppercase text-xs border-foreground/30 text-foreground hover:bg-foreground/10">
                 <Link to="/sponsors">{t("sponsors.viewAll")}</Link>
+              </Button>
+              <Button asChild className="tracking-[0.15em] uppercase text-xs">
+                <Link to="/booking">{t("sponsors.becomeBtn")}</Link>
               </Button>
             </div>
           </ScrollReveal>
