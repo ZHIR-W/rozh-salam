@@ -110,6 +110,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "sponsors.pageIntro": "We partner with brands that share our passion for wonder and craftsmanship. Explore our current sponsors and learn how to become one.",
     "sponsors.becomeTitle": "Become a Sponsor",
     "sponsors.becomeDesc": "Align your brand with unforgettable performances reaching audiences across the region and beyond.",
+    "sponsors.becomeBtn": "Become a Sponsor",
     "sponsors.contactBtn": "Contact for Sponsorship",
     "nav.sponsors": "Sponsors",
 
@@ -215,6 +216,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "sponsors.pageIntro": "ئێمە هاوبەشی دەکەین لەگەڵ ئەو براندانەی کە حەزی ئێمەیان بۆ سەرسوڕمان و کوالیتی هەیە.",
     "sponsors.becomeTitle": "ببە بە سپۆنسەر",
     "sponsors.becomeDesc": "براندەکەت ببەستەوە بە پێشکەشکردنی نەبیرچوونەوە کە بە بینەرانی زۆر دەگات.",
+    "sponsors.becomeBtn": "ببە بە سپۆنسەر",
     "sponsors.contactBtn": "پەیوەندی بۆ سپۆنسەرشیپ",
     "nav.sponsors": "سپۆنسەر",
 
@@ -317,6 +319,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "sponsors.pageIntro": "نحن نتشارك مع العلامات التجارية التي تشاركنا شغفنا بالدهشة والإتقان.",
     "sponsors.becomeTitle": "كن راعياً",
     "sponsors.becomeDesc": "اربط علامتك التجارية بعروض لا تُنسى تصل إلى جماهير في المنطقة وخارجها.",
+    "sponsors.becomeBtn": "كن راعياً",
     "sponsors.contactBtn": "تواصل للرعاية",
     "nav.sponsors": "الرعاة",
 
