@@ -116,6 +116,7 @@ export const sponsors = [
   { name: "Nari Vape", logo: "/sponsors/nari-vape.jpg", url: "" },
   { name: "Hataw Center", logo: "/sponsors/hataw-center.jpg", url: "" },
   { name: "4U Energy", logo: "/sponsors/4u-energy.jpg", url: "" },
+  { name: "Magic Bar", logo: "/sponsors/magic-bar.jpg", url: "" },
   { name: "Sponsor Three", logo: "/placeholder.svg", url: "" },
   { name: "Sponsor Four", logo: "/placeholder.svg", url: "" },
   { name: "Sponsor Five", logo: "/placeholder.svg", url: "" },
